@@ -12,9 +12,10 @@
 <button id="myButton">Finish flow</button>
   <script>
     function redirectToApp() {
-      window.location.href = "paypaygaltesting://success"; // Replace 'success' with any path if needed
-      }
-      document.getElementById('myButton').addEventListener('click', redirectToApp);
+      const returnCode = "Successfully_Linked"
+      window.location.href = "paypaygaltesting://success?code=" + returnCode; // Replace 'success' with any path if needed
+    }
+    document.getElementById('myButton').addEventListener('click', redirectToApp);
   </script>
 </body>
 </html>
