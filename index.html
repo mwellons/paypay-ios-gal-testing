@@ -1,3 +1,4 @@
+<meta http-equiv="refresh" content="0; URL=paypaygaltesting://success" /> 
   <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +9,12 @@
 <body>
 <h1>Welcome to my website!</h1>
 <p>This is a basic website hosted on GitHub Pages.</p>
+<button id="myButton">Finish flow</button>
+  <script>
+    function redirectToApp() {
+      window.location.href = "paypaygaltesting://success"; // Replace 'success' with any path if needed
+      }
+      document.getElementById('myButton').addEventListener('click', redirectToApp);
+  </script>
 </body>
 </html>
