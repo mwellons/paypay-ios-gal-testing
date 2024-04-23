@@ -3,8 +3,19 @@
         "apps": [],
         "details": [
             {
-                "appID": "TEAM_ID.BUNDLE_ID",
-                "paths": [ "/blog/*", "/articles/*" ] 
+                "appID": "Google-LLC.GAL-Test",
+                "components":  [
+                    {                
+                        "/": "/success/*",
+                        "comment": "Matches any URL with a path that starts with /success/."
+                    },
+                    {                
+                        "/": "/authorize/*"
+                    },
+                    {                
+                        "/": "/oauth/token/*"
+                    }
+                ] 
             }
         ]
     }
