@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="0; URL=paypaygaltesting://authorize" />
+<!-- <meta http-equiv="refresh" content="0; URL=paypaygaltesting://authorize" /> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +7,15 @@
     <title>Authorization Page</title>
 </head>
 <body>
-    <h1>This is the /authorize page</h1>
-    <p>The app's webview should return to the app</p>
+  <h1>This is the /authorize page</h1>
+  <p>The app's webview should return to the app</p>
+  <button id="myButton">Return to app</button>
+  <script>
+    function redirectToApp() {
+      const returnCode = "Returned to app"
+      window.location.href = "paypaygaltesting://authorize?code=" + returnCode; // Replace 'success' with any path if needed
+    }
+    document.getElementById('myButton').addEventListener('click', redirectToApp);
+  </script>
 </body>
 </html>
