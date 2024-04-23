@@ -13,7 +13,7 @@
   <script>
     function redirectToApp() {
       const returnCode = "Returned to app"
-      window.location.href = "paypaygaltesting://authorize?code=" + returnCode; // Replace 'success' with any path if needed
+      window.location.href = "paypaygaltesting://authorize/success?code=" + returnCode; // Replace 'success' with any path if needed
     }
     document.getElementById('myButton').addEventListener('click', redirectToApp);
   </script>
