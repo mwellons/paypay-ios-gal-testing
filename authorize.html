@@ -11,9 +11,19 @@
   <p>The app's webview should return to the app</p>
   <button id="myButton">Return to app</button>
   <script>
+    // Code to extract parameters
+    function getParameterByName(name) { 
+      const url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&'); // Escape special regex characters
+      const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+      const results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
     function redirectToApp() {
-      const returnCode = "Returned to app"
-      window.location.href = "paypaygaltesting://authorize/success?code=" + returnCode; // Replace 'success' with any path if needed
+      const oAuthState = getParameterByName('state');
+      window.location.href = "paypaygaltesting://authorize/success?code=" + oAuthState;
     }
     document.getElementById('myButton').addEventListener('click', redirectToApp);
   </script>
