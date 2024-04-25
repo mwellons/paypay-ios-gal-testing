@@ -23,7 +23,7 @@
     }
     function redirectToApp() {
       const oAuthState = getParameterByName('state');
-      window.location.href = "paypaygaltesting://authorize/success?code=" + oAuthState;
+      window.location.href = "paypaygaltesting://authorize?code=" + oAuthState;
     }
     document.getElementById('myButton').addEventListener('click', redirectToApp);
   </script>
