@@ -1,0 +1,21 @@
+<!-- <meta http-equiv="refresh" content="0; URL=paypaygaltesting://success" /> -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+</head>
+<body>
+  <h1>This is the token page for testing iOS GAL</h1>
+  <p>This is a website for testing GAL iOS.</p>
+  <button id="myButton">Generate token</button>
+  <script>
+    function redirectToApp() {
+      const returnCode = "Successfully Linked!"
+      window.location.href = "paypaygaltesting://token?code=" + returnCode;
+    }
+    document.getElementById('myButton').addEventListener('click', redirectToApp);
+  </script>
+</body>
+</html>
