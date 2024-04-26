@@ -6,7 +6,7 @@
                 "appID": "Google-LLC.GAL-Test",
                 "components":  [
                     {                
-                        "/": "/success*",
+                        "/": "/success/*",
                         "comment": "Matches any URL with a path that starts with /success."
                     },
                     {                
