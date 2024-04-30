@@ -9,13 +9,23 @@
 <body>
   <h1>Welcome to my website!</h1>
   <p>This is a website for testing GAL iOS testing.</p>
-  <button id="myButton">Finish flow</button>
+  <button id="universal_link_button">Finish flow with universal links</button>
   <script>
     function redirectToApp() {
       const returnCode = "Successfully Linked!"
       window.location.href = "/paypay-ios-gal-testing/success/return_to_app?code=" + returnCode;
     }
-    document.getElementById('myButton').addEventListener('click', redirectToApp);
+    document.getElementById('universal_link_button').addEventListener('click', redirectToApp);
+  </script>
+
+  
+<button id="custom_url_button">Finish flow with custom URL</button>
+  <script>
+    function redirectToApp() {
+      const returnCode = "Successfully Linked!"
+      window.location.href = "paypaygaltesting://success?code=" + returnCode;
+    }
+    document.getElementById('custom_url_button').addEventListener('click', redirectToApp);
   </script>
 </body>
 </html>
