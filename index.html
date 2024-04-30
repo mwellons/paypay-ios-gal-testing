@@ -10,8 +10,18 @@
 
   <h1>Welcome to my website!</h1>
   <p>This is a website for testing GAL iOS testing.</p>
-  <button id="universal_link_button"  style="font-size: 18px;">Finish flow with universal links</button>
-  
+  <button id="universal_link_button"  >Finish flow with universal links</button>
+  <style>
+    #universal_link_button {
+      font-size: 18px; 
+      transition: background-color 0.3s, transform 0.3s; /* Add transitions */
+    }
+    
+    #universal_link_button:active { /* Styles for the clicked/active state */
+      background-color: darkblue;
+      transform: scale(0.95); /* Make the button slightly smaller */
+    }
+    </style>
   <script>
     function redirectToApp() {
       const returnCode = "Successfully Linked!"
@@ -31,7 +41,7 @@
   }
   
   #custom_url_button:active { /* Styles for the clicked/active state */
-    background-color: darkgreen;
+    background-color: darkblue;
     transform: scale(0.95); /* Make the button slightly smaller */
   }
   </style>
