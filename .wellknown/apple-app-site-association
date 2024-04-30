@@ -1,0 +1,26 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "Google-LLC.GAL-Test",
+                "components":  [
+                    {                
+                        "/": "/*",
+                        "comment": "Matches on anything"
+                    },
+                    {                
+                        "/": "/success/*",
+                        "comment": "Matches any URL with a path that starts with /success/"
+                    },
+                    {                
+                        "/": "/authorize/*"
+                    },
+                    {                
+                        "/": "/oauth/token/*"
+                    }
+                ] 
+            }
+        ]
+    }
+}
