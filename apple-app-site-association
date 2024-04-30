@@ -3,7 +3,7 @@
         "apps": [],
         "details": [
             {
-                "appID": "Google-LLC.GAL-Test",
+                "appID": "GOOGLE-LLC.GAL-Test",
                 "components":  [
                     {                
                         "/": "/*",
