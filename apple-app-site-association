@@ -22,5 +22,8 @@
                 ] 
             }
         ]
+    },
+    "webcredentials" : {
+        "apps": [ "GOOGLE-LLC.GAL-Test" ]
     }
 }
