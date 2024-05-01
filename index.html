@@ -10,7 +10,7 @@
 
   <h1>Welcome to my website!</h1>
   <p>This is a website for testing GAL iOS testing.</p>
-  <a href="https://kelvinc1024.github.io/redirect-testing-only">Finish flow with universal links</a>
+  <a href="https://kelvinc1024.github.io/redirect-testing-only?mode=developer">Finish flow with universal links</a>
   <p></p>
   <button id="universal_link_button"  >Finish flow with universal links</button>
   <style>
@@ -27,7 +27,7 @@
   <script>
     function redirectToApp() {
       const returnCode = "Successfully Linked!"
-      window.location.href = "/paypay-ios-gal-testing/success/return_to_app?code=" + returnCode;
+      window.location.href = "/paypay-ios-gal-testing/success/return_to_app??mode=developer&code=" + returnCode;
     }
     document.getElementById('universal_link_button').addEventListener('click', redirectToApp);
   </script>
