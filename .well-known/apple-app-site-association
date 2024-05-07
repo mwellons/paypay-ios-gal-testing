@@ -3,7 +3,7 @@
         "apps": [],
         "details": [
             {
-                "appID": "GOOGLE-LLC.GAL-Test",
+                "appID": "com.google.experimental0.dev.extension0",
                 "components":  [
                     {                
                         "/": "*",
