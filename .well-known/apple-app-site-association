@@ -6,7 +6,7 @@
                 "appID": "com.google.experimental0.dev.extension0",
                 "components":  [
                     {                
-                        "/": "*",
+                        "/": "/*",
                         "comment": "Matches on anything"
                     },
                     {                
